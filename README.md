@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# Panda CSS
+initialize Panda with support for styled-components template literal syntax 
+
+@see [Panda Styled Components](https://panda-css.com/docs/migration/styled-components)
+
+```bash
+pnpm install -D @pandacss/dev
+pnpm panda init -p --syntax template-literal --jsx-framework react 
+```
+
 ## Getting Started
 
 First, run the development server:

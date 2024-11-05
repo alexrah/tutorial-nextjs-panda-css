@@ -1,9 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import {styled} from "../styled-system/jsx";
+import "./globals.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+        <Button>
+          StyledHeading
+        </Button>
       <main className={styles.main}>
         <Image
           className={styles.logo}
@@ -93,3 +98,24 @@ export default function Home() {
     </div>
   );
 }
+
+/**
+ * @see https://panda-css.com/docs/migration/styled-components
+ * */
+const StyledHeading = styled('div',{
+  base: {
+    backgroundColor: 'red',
+    border: '1px solid #000',
+    color: '#000',
+    padding: '0.5rem 1rem',
+  }
+});
+
+const Button = styled('div', {
+  base: {
+    backgroundColor: '#fff',
+    border: '1px solid #000',
+    color: '#000',
+    padding: '0.5rem 1rem'
+  }
+})
